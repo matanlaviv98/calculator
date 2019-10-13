@@ -17,7 +17,7 @@ namespace practicesharp
                 //if its empty then the user should try again.
                 if (legitstring.IsEmpty()) continue;
                 Calculator cal = new Calculator();
-                double result = cal.Calculate(legitstring);
+                double result = cal.Calculate(legitstring.equation_s);
                 Console.WriteLine("your result is: \"{0}\"\n\n" , result);
             }
         }
