@@ -4,11 +4,11 @@ using System.Text;
 
 namespace practicesharp
 {
-    class Legitstring
+    class Equation_Validator
     {
         public string equation_s { get; private set; }
 
-        public Legitstring(string userinput)
+        public Equation_Validator(string userinput)
         {
             equation_s = "";
             if (Validate(userinput)) equation_s= userinput;

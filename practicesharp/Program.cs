@@ -13,7 +13,7 @@ namespace practicesharp
                                   "to exit please enter \"exit\"\n\n");
                 string word = Console.ReadLine();
                 if (word == "exit") break;
-                Legitstring legitstring = new Legitstring(word);
+                Equation_Validator legitstring = new Equation_Validator(word);
                 //if its empty then the user should try again.
                 if (legitstring.IsEmpty()) continue;
                 Calculator cal = new Calculator();
