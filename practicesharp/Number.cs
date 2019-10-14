@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace practicesharp
+namespace basic_calculator
 {
     class Number
     {
-        public int value { get; private set; }
+        
+        public string number { get; private set; }
         public Number(ref string s)
         {
-            value = 0;
-            string field = "1234567890";
+            number = "";
+            string operators_field = "+-*/";
             foreach (char letter in s)
             {
-                if (!field.Contains(letter))
+                if (operators_field.Contains(letter))
                     break;
-                value *= 10;
-                value += letter - '0';
+                number += letter;
                 s=s.Remove(0,1);
             }
         }

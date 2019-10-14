@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace practicesharp
+namespace basic_calculator
 {
 
     
@@ -14,10 +14,10 @@ namespace practicesharp
         {
             Number number= new Number(ref equation);
             if (equation == "")
-                return number.value;
+                return number.decimal_value;
             char op = equation[0];
             equation=equation.Remove(0,1);
-            return Operator_Decoder.Decode(op).Activate(number.value, Calculate(equation));
+            return Operator_Decoder.Decode(op).Activate(number.decimal_value, Calculate(equation));
         }
     }
 }

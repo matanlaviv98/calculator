@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace practicesharp
+namespace basic_calculator
 {
     public interface Binary_Operator
     {
