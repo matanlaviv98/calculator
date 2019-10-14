@@ -17,7 +17,7 @@ namespace basic_calculator
         {
             try
             {
-                const string allowed_letters = "1234567890+-*/";
+                const string allowed_letters = "1234567890+-*/ABCDEF";
                 foreach (char letter in word)
                 {
                     if (allowed_letters.Contains(letter))

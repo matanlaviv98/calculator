@@ -8,6 +8,7 @@ namespace basic_calculator
     {
         
         public string number { get; private set; }
+        public double deciaml_value;
         public Number(ref string s)
         {
             number = "";

@@ -43,7 +43,7 @@ namespace basic_calculator
     {
         static public Binary_Operator Decode(char input)
         {
-            Binary_Operator binary_Operator = null;
+            Binary_Operator binary_Operator ;
             switch (input)
             {
                 case '+':
@@ -57,6 +57,9 @@ namespace basic_calculator
                     break;
                 case '/':
                     binary_Operator = new Div_operator();
+                    break;
+                default:
+                    binary_Operator = null;
                     break;
             }
             return binary_Operator;
